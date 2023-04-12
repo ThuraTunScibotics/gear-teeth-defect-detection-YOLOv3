@@ -39,7 +39,9 @@ python xml_to_csv.py --path_to_xml /path/to/train_images_folder --path_to_csv /p
 # For testing-set
 python xml_to_csv.py --path_to_xml /path/to/test_images_folder --path_to_csv /path/to/test_images_folder/annotation.csv
 ```
+
 ### Create labelmap.pbtxt
+/img_xml_data/labelmap.pbtxt
 
 
 ### convert csv_file to annotation.txt file in a separate data folder(yolov3_data)
@@ -52,9 +54,10 @@ python prepare_data.py --path_to_images /path/to/test_images_folder --path_to_cs
 ```
 
 ### Adding class names
-classes/gear_teeth.namess
+/classes/gear_teeth.namess
 
-References;
+### References;
+
 https://github.com/sniper0110/YOLOv3
 
 https://github.com/YunYang1994/TensorFlow2.0-Examples/tree/master/4-Object_Detection/YOLOV3

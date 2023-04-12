@@ -44,7 +44,7 @@ python xml_to_csv.py --path_to_xml /path/to/test_images_folder --path_to_csv /pa
 /img_xml_data/labelmap.pbtxt
 
 
-### convert csv_file to annotation.txt file in a separate data folder(yolov3_data)
+### Convert csv_file to annotation.txt file in a separate data folder(yolov3_data)
 ```
 # For train_gear_annotations.txt
 python prepare_data.py --path_to_images /path/to/train_images_folder --path_to_csv_annotations /path/to/train_images_folder/annotation.csv --path_to_save_output /yolov3_data/train

@@ -1,0 +1,14 @@
+item {
+  id: 1
+  name: 'defect_lack'
+}
+
+item {
+  id: 2
+  name: 'defect_break'
+}
+
+item {
+  id: 3
+  name: 'good_product'
+}

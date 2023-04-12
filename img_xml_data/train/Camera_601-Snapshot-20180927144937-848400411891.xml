@@ -1,0 +1,26 @@
+<annotation>
+	<folder>gear-images</folder>
+	<filename>Camera_601-Snapshot-20180927144937-848400411891.JPG</filename>
+	<path>/home/thura/Desktop/Gear-Teeth-Thesis/gear-images/Camera_601-Snapshot-20180927144937-848400411891.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>good_product</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>161</xmin>
+			<ymin>68</ymin>
+			<xmax>597</xmax>
+			<ymax>500</ymax>
+		</bndbox>
+	</object>
+</annotation>

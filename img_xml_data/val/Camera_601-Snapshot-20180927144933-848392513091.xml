@@ -1,0 +1,26 @@
+<annotation>
+	<folder>val</folder>
+	<filename>Camera_601-Snapshot-20180927144933-848392513091.JPG</filename>
+	<path>/home/thura/Desktop/gear_teeth_detection/val/Camera_601-Snapshot-20180927144933-848392513091.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>good_product</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>286</xmin>
+			<ymin>73</ymin>
+			<xmax>721</xmax>
+			<ymax>511</ymax>
+		</bndbox>
+	</object>
+</annotation>

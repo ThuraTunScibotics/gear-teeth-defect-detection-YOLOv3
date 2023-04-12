@@ -1,0 +1,26 @@
+<annotation>
+	<folder>val</folder>
+	<filename>Camera_601-Snapshot-20180927143609-846827786693.JPG</filename>
+	<path>/home/thura/Desktop/gear_teeth_detection/val/Camera_601-Snapshot-20180927143609-846827786693.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>defect_lack</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>386</xmin>
+			<ymin>151</ymin>
+			<xmax>457</xmax>
+			<ymax>206</ymax>
+		</bndbox>
+	</object>
+</annotation>

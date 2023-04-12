@@ -1,0 +1,26 @@
+<annotation>
+	<folder>test</folder>
+	<filename>Camera_601-Snapshot-20180927144106-847405645525.JPG</filename>
+	<path>/home/thura/Desktop/gear_teeth_detection/test/Camera_601-Snapshot-20180927144106-847405645525.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>defect_break</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>198</xmin>
+			<ymin>370</ymin>
+			<xmax>248</xmax>
+			<ymax>410</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -7,10 +7,18 @@ $ wget https://pjreddie.com/media/files/yolov3.weights
 
 ### Annotation the images with `LabelImg`
 * To Install LabelImg - 
+```
+git clone 
+
+conda create -n LabelImg python=3.9.13
+
+conda activate LabelImg
+pip install labelimg
+```
 * Open LabelImg
 ```
-# activate the virtual_env in which labelImg was installed
-source labelImg-venv/bin/activate
+# activate the conda environment
+conda activate LabelImg
 
 # cd to the cloned labelImg-Repo
 ls

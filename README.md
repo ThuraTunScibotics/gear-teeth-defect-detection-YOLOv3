@@ -75,3 +75,10 @@ Change the preparameter & hyperparameters for model training based on the machin
 * testing annotation path ('/dataset/test_gear_annotations.txt') / __C.TEST.ANNOT_PATH
 
 **Note** Model accuracy & performance will be depending on some of the hyperparameters such as epochs, batch size, neuron sizes and learning rate.
+
+### Training YOLOv3 Object Detection Model
+```
+python train.py
+```
+
+### 

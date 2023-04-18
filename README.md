@@ -56,12 +56,6 @@ python prepare_data.py --path_to_images /path/to/test_images_folder --path_to_cs
 ### Adding class names
 /classes/[gear_teeth.names](https://github.com/ThuraTunScibotics/gear-teeth-defect-detection-YOLOv3/blob/main/classes/gear_teeth.names)
 
-### References;
-
-https://github.com/sniper0110/YOLOv3
-
-https://github.com/YunYang1994/TensorFlow2.0-Examples/tree/master/4-Object_Detection/YOLOV3
-
 ### Changing the necessary parameters in configuration file
 /core/[config.py](https://github.com/ThuraTunScibotics/gear-teeth-defect-detection-YOLOv3/blob/main/core/config.py)
 Change the preparameter & hyperparameters for model training based on the machine being trained on;
@@ -77,8 +71,27 @@ Change the preparameter & hyperparameters for model training based on the machin
 **Note** Model accuracy & performance will be depending on some of the hyperparameters such as epochs, batch size, neuron sizes and learning rate.
 
 ### Training YOLOv3 Object Detection Model
+After the changing and adding some parameter in configuration file.
 ```
 python train.py
 ```
 
-### 
+### Analyzing the results of training
+After the model had been trained, the performance of the model was visualized and analyzed on Tensorboard.
+```
+tensorboard --logdir 
+```
+
+
+### References;
+
+https://github.com/sniper0110/YOLOv3
+
+https://github.com/YunYang1994/TensorFlow2.0-Examples/tree/master/4-Object_Detection/YOLOV3
+
+### References;
+
+https://github.com/sniper0110/YOLOv3
+
+https://github.com/YunYang1994/TensorFlow2.0-Examples/tree/master/4-Object_Detection/YOLOV3
+

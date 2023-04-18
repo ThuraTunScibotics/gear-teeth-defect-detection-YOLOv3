@@ -77,11 +77,21 @@ python train.py
 ```
 
 ### Analyzing the results of training
-After the model had been trained, the performance of the model was visualized and analyzed on Tensorboard.
+After the model had been trained, the performance of the model was visualized and analyzed on Tensorboard using the trained [log](https://github.com/ThuraTunScibotics/gear-teeth-defect-detection-YOLOv3/tree/main/result_output/log).
 ```
-tensorboard --logdir 
+tensorboard --logdir './result_output/log'
 ```
-
+### Evaluating the trained model on the testing set
+Test the trained model on the testing set of data, and then check the result of tested image with bounding boxes in `./result_output/eval_detection`.
+```
+python test.py
+```
+### Compute mean average precision (mAP) of the trained model
+To compute mAP of the trained model;
+```
+python mAP/main.py
+```
+The computed mAP can be checked in 
 
 ### References;
 

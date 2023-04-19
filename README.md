@@ -91,7 +91,9 @@ To compute mAP of the trained model;
 ```
 python mAP/main.py
 ```
-The computed mAP can be checked in 
+The computed mAP can be checked in `./results/mAP.png`.
+
+<img src="/results/mAP.png" height="40%" width="40%" >
 
 ### References;
 

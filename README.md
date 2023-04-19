@@ -95,15 +95,25 @@ The computed mAP can be checked in `./results/mAP.png`.
 
 <img src="/results/mAP.png" height="40%" width="40%" >
 
+The mAP on each class achieved the best result with accurately detected score.
+
+### Save the model
+The trained weights of the model is saved as TF2 model format for production ready by running
+```
+python ckpt_to_savedModel.py
+```
+After running, the trained & production-ready model will be save in `./SavedModel/YOLOv3_model/`
+
+### Inferencing the model on inferencing data (new images)
+To inference the model;
+```
+python run_inference.py --path_to_images './inference_data/'
+```
+#### Sample images after inferencing
+
+
 ### References;
 
 https://github.com/sniper0110/YOLOv3
 
 https://github.com/YunYang1994/TensorFlow2.0-Examples/tree/master/4-Object_Detection/YOLOV3
-
-### References;
-
-https://github.com/sniper0110/YOLOv3
-
-https://github.com/YunYang1994/TensorFlow2.0-Examples/tree/master/4-Object_Detection/YOLOV3
-

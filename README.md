@@ -1,6 +1,6 @@
 # gear-teeth-defect-detection-YOLOv3
 
-### Download YOLOv3 weights
+### Download YOLOv3 weights at the very first step
 ```
 $ wget https://pjreddie.com/media/files/yolov3.weights
 ```
@@ -110,6 +110,9 @@ To inference the model;
 python run_inference.py --path_to_images './inference_data/'
 ```
 #### Sample images after inferencing
+<img src="/inferenced_samples/detection_defect_break.png">
+<img src="/inferenced_samples/detection_defect_lack.png">
+<img src="/inferenced_samples/detection_good_product.png">
 
 
 ### References;

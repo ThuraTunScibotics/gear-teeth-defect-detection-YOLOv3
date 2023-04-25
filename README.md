@@ -4,7 +4,7 @@
 ```
 $ wget https://pjreddie.com/media/files/yolov3.weights
 ```
-
+--------------------
 ### Annotation the images with `LabelImg`
 * To Install LabelImg - 
 ```
@@ -30,6 +30,7 @@ python labelImg.py
 ```
 * Annotation procedure;
 
+----------------------------
 
 ### convert annotated xml to csv_file
 ```
@@ -43,6 +44,7 @@ python xml_to_csv.py --path_to_xml /path/to/test_images_folder --path_to_csv /pa
 ### Create labelmap.pbtxt
 /img_xml_data/[labelmap.pbtxt](https://github.com/ThuraTunScibotics/gear-teeth-defect-detection-YOLOv3/blob/main/img_xml_data/labelmap.pbtxt)
 
+----------------------------------
 
 ### Convert csv_file to annotation.txt file in a separate data folder(yolov3_data)
 ```
@@ -52,6 +54,7 @@ python prepare_data.py --path_to_images /path/to/train_images_folder --path_to_c
 # For test_gear_annotation.txt
 python prepare_data.py --path_to_images /path/to/test_images_folder --path_to_csv_annotations /path/to/test_images_folder/annotation.csv --path_to_save_output /yolov3_data/test
 ```
+---------------------------
 
 ### Adding class names
 /classes/[gear_teeth.names](https://github.com/ThuraTunScibotics/gear-teeth-defect-detection-YOLOv3/blob/main/classes/gear_teeth.names)
@@ -70,22 +73,27 @@ Change the preparameter & hyperparameters for model training based on the machin
 
 **Note** Model accuracy & performance will be depending on some of the hyperparameters such as epochs, batch size, neuron sizes and learning rate.
 
+----------------------------------
+
 ### Training YOLOv3 Object Detection Model
 After the changing and adding some parameter in configuration file.
 ```
 python train.py
 ```
+--------------------------------------
 
 ### Analyzing the results of training
 After the model had been trained, the performance of the model was visualized and analyzed on Tensorboard using the trained [log](https://github.com/ThuraTunScibotics/gear-teeth-defect-detection-YOLOv3/tree/main/result_output/log).
 ```
 tensorboard --logdir './result_output/log'
 ```
+-----------------------------------
 ### Evaluating the trained model on the testing set
 Test the trained model on the testing set of data, and then check the result of tested image with bounding boxes in `./result_output/eval_detection`.
 ```
 python test.py
 ```
+---------------------------------------
 ### Compute mean average precision (mAP) of the trained model
 To compute mAP of the trained model;
 ```
@@ -97,12 +105,16 @@ The computed mAP can be checked in `./results/mAP.png`.
 
 The mAP on each class achieved the best result with accurately detected score.
 
+---------------------------------------
+
 ### Save the model
 The trained weights of the model is saved as TF2 model format for production ready by running
 ```
 python ckpt_to_savedModel.py
 ```
 After running, the trained & production-ready model will be save in `./SavedModel/YOLOv3_model/`
+
+--------------------------------------------
 
 ### Inferencing the model on inferencing data (new images)
 To inference the model;
@@ -114,7 +126,7 @@ python run_inference.py --path_to_images './inference_data/'
 <img src="/inferenced_samples/detection_defect_lack.png">
 <img src="/inferenced_samples/detection_good_product.png">
 
-
+--------------------------------
 ### References;
 
 https://github.com/sniper0110/YOLOv3

@@ -8,7 +8,7 @@ $ wget https://pjreddie.com/media/files/yolov3.weights
 ### Annotation the images with `LabelImg`
 * To Install LabelImg - 
 ```
-git clone 
+git clone https://github.com/heartexlabs/labelImg.git
 
 conda create -n LabelImg python=3.9.13
 
